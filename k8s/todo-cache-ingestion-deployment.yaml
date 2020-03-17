@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   namespace: todo
@@ -27,7 +27,7 @@ spec:
         image: busybox
         command: ['sh', '-c', 'until nslookup todo-rabbitmq; do echo waiting for RabbitMQ; sleep 2; done;']
       containers:
-      - image: jackgreengit/todo-cache-ingestion:1.0
+      - image: greenjack/todo-cache-ingestion:1.0
         name: todo-cache-ingestion
         envFrom:
           - configMapRef:

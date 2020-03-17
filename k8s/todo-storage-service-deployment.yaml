@@ -22,7 +22,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: jackgreengit/todo-storage-service:1.0
+      - image: greenjack/todo-storage-service:1.0
         name: todo-storage-service
         envFrom:
           - configMapRef:
