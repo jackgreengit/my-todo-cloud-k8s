@@ -10,7 +10,7 @@
     },
     {
       "name": "todo-cache-ingestion",
-      "image": "jackgreengit/todo-cache-ingestion:1.0",
+      "image": "greenjack/todo-cache-ingestion:1.0",
       "hostname": "todo-cache-ingestion",
       "memory": 128,
       "essential": false,
@@ -22,14 +22,14 @@
     },
     {
       "name": "todo-cache-service",
-      "image": "jackgreengit/todo-cache-service:1.0",
+      "image": "greenjack/todo-cache-service:1.0",
       "hostname": "todo-cache-service",
       "memory": 128,
       "essential": false
     },
     {
       "name": "todo-search-ingestion",
-      "image": "jackgreengit/todo-search-ingestion:1.0",
+      "image": "greenjack/todo-search-ingestion:1.0",
       "hostname": "todo-search-ingestion",
       "memory": 128,
       "essential": false,
@@ -41,14 +41,14 @@
     },
     {
       "name": "todo-search-service",
-      "image": "jackgreengit/todo-search-service:1.0",
+      "image": "greenjack/todo-search-service:1.0",
       "hostname": "todo-search-service",
       "memory": 128,
       "essential": false
     },
     {
       "name": "todo-storage-ingestion",
-      "image": "jackgreengit/todo-storage-ingestion:1.0",
+      "image": "greenjack/todo-storage-ingestion:1.0",
       "hostname": "todo-storage-ingestion",
       "memory": 128,
       "essential": false,
@@ -60,14 +60,14 @@
     },
     {
       "name": "todo-storage-service",
-      "image": "jackgreengit/todo-storage-service:1.0",
+      "image": "greenjack/todo-storage-service:1.0",
       "hostname": "todo-storage-service",
       "memory": 128,
       "essential": false
     },
     {
       "name": "todo-api-gateway",
-      "image": "jackgreengit/todo-api-gateway:1.0",
+      "image": "greenjack/todo-api-gateway:1.0",
       "hostname": "todo-api-gateway",
       "memory": 128,
       "essential": false,
@@ -80,14 +80,14 @@
     },
     {
       "name": "todo-view",
-      "image": "jackgreengit/todo-view:1.0",
+      "image": "greenjack/todo-view:1.0",
       "hostname": "todo-view",
       "memory": 768,
       "essential": false
     },
     {
       "name": "todo-proxy",
-      "image": "jackgreengit/todo-proxy:1.0",
+      "image": "greenjack/todo-proxy:1.0",
       "memory": 128,
       "essential": true,
       "portMappings": [

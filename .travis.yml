@@ -23,13 +23,13 @@ before_install:
 
 # Build development images for test
 before_script:
- - docker build ./todo-view -f ./todo-view/Dockerfile.dev -t jackgreengit/todo-view-test
- - docker build ./todo-cache-service -f Dockerfile.nodejs.dev -t jackgreengit/todo-cache-service-test
+ - docker build ./todo-view -f ./todo-view/Dockerfile.dev -t greenjack/todo-view-test
+ - docker build ./todo-cache-service -f Dockerfile.nodejs.dev -t greenjack/todo-cache-service-test
 
 # Run some tests
 script:
- - docker run jackgreengit/todo-view-test npm test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
- - docker run jackgreengit/todo-cache-service-test npm test
+ - docker run greenjack/todo-view-test npm test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+ - docker run greenjack/todo-cache-service-test npm test
 
 after_success:
  # Build Production Images for deployment
