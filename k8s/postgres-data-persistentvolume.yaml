@@ -11,4 +11,4 @@ spec:
  accessModes:
    - ReadWriteOnce
  hostPath:
-   path: "{path-to-your}/kubedata/todo/postgres"
+   path: "/home/dockersudo/udemy-rancher/my-todo-cloud-k8s/pv/todo/postgres"

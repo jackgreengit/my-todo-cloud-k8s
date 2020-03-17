@@ -17,3 +17,6 @@
 # System Files
 .DS_Store
 Thumbs.db
+
+#k8s data file
+pv/
